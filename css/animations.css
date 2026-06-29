@@ -1,0 +1,90 @@
+/* =========================================================
+   VELOURA MOTORS — ANIMATIONS
+========================================================= */
+
+/* ============ REVEAL ON SCROLL ============ */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .9s var(--ease), transform .9s var(--ease);will-change:opacity, transform;}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:.1s;}
+.reveal-delay-2{transition-delay:.2s;}
+.reveal-delay-3{transition-delay:.3s;}
+.reveal-delay-4{transition-delay:.4s;}
+.reveal-delay-5{transition-delay:.5s;}
+
+/* ============ IMAGE REVEAL (mask wipe) ============ */
+.reveal-image{position:relative;overflow:hidden;}
+.reveal-image::after{
+  content:'';position:absolute;inset:0;background:var(--bg);z-index:3;
+  transform:scaleX(1);transform-origin:right;transition:transform 1s var(--ease);
+}
+.reveal-image.revealed::after{transform:scaleX(0);}
+.reveal-image img{transform:scale(1.15);transition:transform 1.2s var(--ease);}
+.reveal-image.revealed img{transform:scale(1);}
+
+/* ============ TEXT REVEAL (hero heading lines) ============ */
+.reveal-line{display:block;overflow:hidden;}
+.reveal-line > span{display:inline-block;transform:translateY(110%);animation:lineUp 1s var(--ease) forwards;}
+.reveal-line:nth-of-type(1) > span{animation-delay:.15s;}
+.reveal-line:nth-of-type(2) > span{animation-delay:.32s;}
+.reveal-text{opacity:0;animation:fadeInUp .8s var(--ease) forwards;animation-delay:.05s;}
+
+/* ============ KEYFRAMES ============ */
+@keyframes lineUp{to{transform:translateY(0);}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+@keyframes loaderLetter{to{opacity:1;transform:translateY(0);}}
+@keyframes scrollLine{
+  0%{top:-100%;}
+  50%{top:0%;}
+  100%{top:100%;}
+}
+@keyframes marquee{
+  from{transform:translateX(0);}
+  to{transform:translateX(-100%);}
+}
+@keyframes floatY{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+}
+@keyframes pulseGlow{
+  0%,100%{box-shadow:0 0 0 0 rgba(212,175,55,.35);}
+  50%{box-shadow:0 0 0 8px rgba(212,175,55,0);}
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ============ HOVER LIFT (generic utility) ============ */
+.hover-lift{transition:transform .4s var(--ease), box-shadow .4s var(--ease);}
+.hover-lift:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.4);}
+
+/* ============ FLOATING ELEMENTS ============ */
+.float{animation:floatY 5s ease-in-out infinite;}
+
+/* ============ GOLD GLOW PULSE ============ */
+.glow-pulse{animation:pulseGlow 2.4s ease-in-out infinite;}
+
+/* ============ GRADIENT BORDER UTILITY ============ */
+.gradient-border{
+  position:relative;border:1px solid transparent;border-radius:8px;
+  background:linear-gradient(var(--card), var(--card)) padding-box,
+             linear-gradient(135deg, var(--gold), rgba(212,175,55,.05), var(--gold)) border-box;
+}
+
+/* ============ MAGNETIC BUTTON (JS sets translate via inline transform) ============ */
+.magnetic{transition:transform .25s var(--ease-soft), background .3s, box-shadow .3s;}
+
+/* ============ CARD TILT (JS sets rotateX/rotateY inline) ============ */
+.tilt{transition:transform .15s ease-out;}
+
+/* ============ PARALLAX LAYERS (JS sets translateY inline via data-speed) ============ */
+[data-parallax]{will-change:transform;}
+
+/* ============ PAGE TRANSITION OVERLAY ============ */
+.page-transition{
+  position:fixed;inset:0;background:var(--bg);z-index:900;transform:translateY(101%);
+  transition:transform .6s var(--ease);pointer-events:none;
+}
+.page-transition.active{transform:translateY(0);}
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
+}

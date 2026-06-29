@@ -20,14 +20,14 @@ const CARS = [
     price:420000, hp:577, topSpeed:155, accel:"4.5", year:2025, transmission:"Automatic", fuel:"Electric", drive:"AWD", seats:4,
     tag:"Electric", rating:4.8,
     image:"https://images.unsplash.com/photo-1631295868223-63265b40d9e4?q=80&w=1000&auto=format&fit=crop",
-    gallery:["https://images.unsplash.com/photo-1631295868223-63265b40d9e4?q=80&w=1400&auto=format&fit=crop","https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=1400&auto=format&fit=crop"],
+    gallery:["https://images.unsplash.com/photo-1631295868223-63265b40d9e4?q=80&w=1000&auto=format&fit=crop","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCF4iEOqFon8nUb2okAFU0LNZ9UPi5jrnedW2ULqgbiLxnHLIAKcbyUIh&s=10"],
     desc:"Rolls-Royce's first fully electric grand tourer — silent, instantaneous, and finished to the marque's uncompromising standard." },
 
   { id:"bentley-continental-gt-speed", brand:"Bentley", name:"Continental GT Speed", category:"luxury-sedans",
     price:275000, hp:650, topSpeed:208, accel:"3.5", year:2024, transmission:"Automatic", fuel:"Petrol", drive:"AWD", seats:4,
     tag:"Editor's Choice", rating:4.9,
-    image:"https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop",
-    gallery:["https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop","https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1400&auto=format&fit=crop"],
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFNYdr460RsNi3nEvalkrlLFTGAsKS8mvFJcyESJ2_PnQwckJMEJm1dc&s=10",
+    gallery:["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFNYdr460RsNi3nEvalkrlLFTGAsKS8mvFJcyESJ2_PnQwckJMEJm1dc&s=10","https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/1-bentley-continental-gt-speed-2022-road-test-hero.jpg?itok=9RimueG-"],
     desc:"A handcrafted interior wrapped around a W12 engine that refuses to be ignored. This is not transportation — it's a statement." },
 
   { id:"ferrari-sf90-stradale", brand:"Ferrari", name:"SF90 Stradale", category:"supercars",
@@ -117,8 +117,8 @@ const CARS = [
   { id:"koenigsegg-jesko", brand:"Koenigsegg", name:"Jesko Absolut", category:"limited-edition",
     price:3400000, hp:1600, topSpeed:330, accel:"2.5", year:2025, transmission:"Automatic", fuel:"Petrol", drive:"RWD", seats:2,
     tag:"Limited Edition", rating:5.0,
-    image:"https://images.unsplash.com/photo-1611821064736-0fc1a3df87e7?q=80&w=1000&auto=format&fit=crop",
-    gallery:["https://images.unsplash.com/photo-1611821064736-0fc1a3df87e7?q=80&w=1400&auto=format&fit=crop"],
+    image:"images/limited.jpg",
+    gallery:["images/limited.jpg"],
     desc:"Engineered purely for top-speed ambition — one of the fastest production cars ever conceived, by allocation only." },
 
   { id:"mercedes-vision-amg", brand:"Mercedes-AMG", name:"Vision Concept", category:"concept-cars",
@@ -164,7 +164,7 @@ const CATEGORIES = [
   { key:"convertibles", title:"Convertibles", img:"https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=700&auto=format&fit=crop" },
   { key:"classic-cars", title:"Classic Cars", img:"https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?q=80&w=700&auto=format&fit=crop" },
   { key:"collectors-edition", title:"Collectors Edition", img:"https://images.unsplash.com/photo-1611016186353-9af58c69a533?q=80&w=700&auto=format&fit=crop" },
-  { key:"limited-edition", title:"Limited Edition", img:"https://images.unsplash.com/photo-1611821064736-0fc1a3df87e7?q=80&w=700&auto=format&fit=crop" },
+  { key:"limited-edition", title:"Limited Edition", img:"images/limited.jpg" },
   { key:"concept-cars", title:"Concept Cars", img:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=700&auto=format&fit=crop" }
 ];
 

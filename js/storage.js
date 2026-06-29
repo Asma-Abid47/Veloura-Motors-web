@@ -34,7 +34,7 @@ const CARS = [
     price:524000, hp:986, topSpeed:211, accel:"2.5", year:2025, transmission:"Automatic", fuel:"Hybrid", drive:"AWD", seats:2,
     tag:"Limited Edition", rating:4.9,
     image:"https://cdn.rmsothebys.com/f/4/9/2/f/e/f492fe6859b9dafbe6b6a5ade3195da89d8f8eea.webp",
-    gallery:["https://cdn.rmsothebys.com/f/4/9/2/f/e/f492fe6859b9dafbe6b6a5ade3195da89d8f8eea.webp","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YgS7Bt5mxXUZhb8rqsMAmyY1FhPz7Ji0w8_uUiWl3X3oju2hYKpD3Xjo&s=10"],
+    gallery:["https://cdn.rmsothebys.com/f/4/9/2/f/e/f492fe6859b9dafbe6b6a5ade3195da89d8f8eea.webp","https://blackfoxmotors.de/wp-content/uploads/2025/12/394A2865-scaled.jpeg"],
     desc:"Ferrari's first series-production PHEV — a 986bhp manifesto proving electrification can sharpen, not soften, the prancing horse." },
 
   { id:"mclaren-750s", brand:"McLaren", name:"750S", category:"sports-cars",

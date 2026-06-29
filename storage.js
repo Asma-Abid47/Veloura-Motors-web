@@ -164,7 +164,7 @@ const CATEGORIES = [
   { key:"convertibles", title:"Convertibles", img:"https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=700&auto=format&fit=crop" },
   { key:"classic-cars", title:"Classic Cars", img:"https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?q=80&w=700&auto=format&fit=crop" },
   { key:"collectors-edition", title:"Collectors Edition", img:"https://images.unsplash.com/photo-1611016186353-9af58c69a533?q=80&w=700&auto=format&fit=crop" },
-  { key:"limited-edition", title:"Limited Edition", img:"images/limited.jpg" },
+  { key:"limited-edition", title:"Limited Edition", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_PksualytG6EqblyjKrqioSjQXrPIZANA45ZFj7u20g&s=10" },
   { key:"concept-cars", title:"Concept Cars", img:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=700&auto=format&fit=crop" }
 ];
 
